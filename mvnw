@@ -46,7 +46,10 @@ if [ -z "$MAVEN_SKIP_RC" ] ; then
 
 fi
 
-set JAVA_HOME=`/usr/local/java/jdk1.8.0_121`
+export JAVA_HOME=/usr/local/java/jdk1.8.0_121
+export JRE_HOME=/usr/local/java/jdk1.8.0_121/jre
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib:$CLASSPATH
+export PATH=$JAVA_HOME/bin:$PATH:$JRE_HOME/bin
 echo "① : $JAVA_HOME : $PATH $CLASSPATH $JRE_HOME $HOME"
 
 # OS specific support.  $var _must_ be set to either true or false.
