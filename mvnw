@@ -46,6 +46,8 @@ if [ -z "$MAVEN_SKIP_RC" ] ; then
 
 fi
 
+echo "① : $JAVA_HOME"
+
 # OS specific support.  $var _must_ be set to either true or false.
 cygwin=false;
 darwin=false;
@@ -88,6 +90,7 @@ case "`uname`" in
            ;;
 esac
 
+echo "②: $JAVA_HOME"
 if [ -z "$JAVA_HOME" ] ; then
   if [ -r /etc/gentoo-release ] ; then
     JAVA_HOME=`java-config --jre-home`
@@ -119,7 +122,7 @@ if [ -z "$M2_HOME" ] ; then
   cd "$saveddir"
   # echo Using m2 at $M2_HOME
 fi
-
+echo "③: $JAVA_HOME"
 # For Cygwin, ensure paths are in UNIX format before anything is touched
 if $cygwin ; then
   [ -n "$M2_HOME" ] &&
@@ -177,7 +180,7 @@ if [ ! -x "$JAVACMD" ] ; then
   echo "  We cannot execute $JAVACMD" >&2
   exit 1
 fi
-
+echo "④: $JAVA_HOME"
 if [ -z "$JAVA_HOME" ] ; then
   echo "Warning: JAVA_HOME environment variable is not set."
 fi
