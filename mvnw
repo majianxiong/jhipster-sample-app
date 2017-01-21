@@ -46,7 +46,7 @@ if [ -z "$MAVEN_SKIP_RC" ] ; then
 
 fi
 
-echo "① : $JAVA_HOME : $PATH $CLASSPATH $JRE_HOME"
+echo "① : $JAVA_HOME : $PATH $CLASSPATH $JRE_HOME $HOME"
 
 # OS specific support.  $var _must_ be set to either true or false.
 cygwin=false;
